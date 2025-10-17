@@ -4,6 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Judul Halaman</title>
+<style>
+#about{
+  background-color: #ea0c0c;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 700px; 
+  margin: 20PX auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#about h2{
+    color: #fff;
+    border-bottom: 2px solid #100505;
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+#about p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 6px 0;
+  border-bottom: 1px solid #0b0b0b;
+}
+#about strong{
+  min-width: 180px;
+  color: #fff;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 16px;
+  flex-shrink: 0;
+}
+@media (max-width:600px) {
+  #about p{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #about strong{
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 2px;
+  }
+  
+}
+
+
+</style>
 </head>
 <body>
 <header>
@@ -20,25 +67,19 @@
 <section id="home">
 <h2>Selamat Datang</h2>
 <p>Ini contoh paragraf HTML.</p>
+<h2>ini biodata saya</h2>
 </section>
 <section id="about">
-<h2> &#128516; perkenalkan nama saya Revandi sastra &#128516; </h2>
-<p>dengan nim 2522500066</p>
-<h2>tempat lahir</h2>
-<P>tanjung sangkar</P>
-<h2>hobby</h2>
-<P>main motor</P>
-<h2>pasangan</h2>
-<P>jomblo</P>
-<h2>pekerjaan</h2>
-<P>mahasiswa</P>
-<h2>nama orang tua</h2>
-<P>nama ibu jamila</P>
-<P>nama ayah basuni</P>
-<h2>nama kakak</h2>
-<P>ricky</P>
-<h2>nama adek</h2>
-<P>varendra</P>
+<P><strong>NIM:</strong>2522500066</P>
+<P><strong>NAMA LENGKAP:</strong>Revandi sastra</P>
+<P><strong>TEMPAT LAHIR:</strong>Tanjung sangkar</P>
+<P><strong>TANGGAL LAHIR:</strong>02-09-2006</P>
+<P><strong>HOBI:</strong>Main motor</P>
+<P><strong>PASANGAN:</strong>Jomblo</P>
+<P><strong>PEKERJAAN:</strong>Mahasiswa</P>
+<P><strong>NAMA ORANG TUA:</strong>Bapak Basuni dan Ibu Jamila</P>
+<P><strong>NAMA KAKAK:</strong>Ricky</P>
+<P><strong>NAMA ADIK</strong>Varendra </P>
 
 </section>
 </section>
@@ -55,6 +96,7 @@
     <textarea id="pesan" name="pesan" rows="5" required></textarea>
 
     <button type="submit">Kirim</button>
+    <button type="batal">batal</button>
   </form>
 </section>
 </main>
@@ -64,38 +106,77 @@
 </body>
 </html>
 
-
 <style>
 
+#contact {
+  max-width: 680px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #603aeb;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 500px;
-      margin: auto;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      margin-top: 10px;
-    }
-    input, textarea {
-      padding: 8px;
-      font-size: 16px;
-      margin-top: 5px;
-    }
-    button {
-      margin-top: 15px;
-      padding: 10px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #45a049;
-    }
+#contact h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #f9f1f1;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #faf6f6;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+
+form button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"] {
+  background-color: #4a90e2;
+  color: white;
+}
+
+form button[type="submit"]:hover {
+  background-color: #357ABD;
+}
+
+form button[type="batal"] {
+  background-color: #f50e0e;
+  color: #333;
+}
+
+form button[type="batal"]:hover {
+  background-color: #999;
+}
+
 </style>
