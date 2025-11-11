@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle Sidebar">☰</button>
         <h1>Ini Header</h1>
         <nav id="navMenu">
             <ul>
@@ -18,8 +18,13 @@
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
-
     </header>
+    
+    <aside class="sidebar" id="sidebar">
+        <button onclick="scrollToSection('home')">Beranda</button>
+        <button onclick="scrollToSection('about')">Tentang</button>
+        <button onclick="scrollToSection('contact')">Kontak</button>
+    </aside>
     
     <main>
         <section id="home">
@@ -28,16 +33,31 @@
         </section>
         <section id="about">
             <h2> &#128512;TENTANG SAYA&#128512; </h2>
-            <p><strong>NIM:</strong>2522500066</p>
-            <p><strong>Nama Lengkap:</strong>Revandi Sastra</p>
-            <p><strong>Tempat lahir:</strong>Tanjung Sangkar</p>
-            <p><strong>Tanggal lahir:</strong>02-09-2006</p>
-            <p><strong>Hobi:</strong>Main motor, Main bola,</p>
-            <p><strong>Pasangan:</strong>Jomblo</p>
-            <p><strong>Pekerjaan:</strong>Saya adalah mahasiswa</p>
-            <p><strong>Nama orang tua:</strong>Nama Ayah saya adalah Basuni dan Nama Ibu saya Jamila</p>
-            <p><strong>Nama kakak:</strong>Ricky</p>
-            <p><strong>Nama adik:</strong>Varendra</p>
+            <?php
+                // Variabel PHP untuk data diri
+                $nim = "2522500066";
+                $nama_lengkap = "Revandi Sastra";
+                $tempat_lahir = "Tanjung Sangkar";
+                $tanggal_lahir = "02-09-2006";
+                $hobi = "Main motor, Main bola,";
+                $pasangan = "Jomblo";
+                $pekerjaan = "Saya adalah mahasiswa";
+                $nama_orang_tua = "Nama Ayah saya adalah Basuni dan Nama Ibu saya Jamila";
+                $nama_kakak = "Ricky";
+                $nama_adik = "Varendra";
+
+                // Menampilkan data menggunakan echo
+                echo "<p><strong>NIM:</strong> $nim</p>";
+                echo "<p><strong>Nama Lengkap:</strong> $nama_lengkap</p>";
+                echo "<p><strong>Tempat lahir:</strong> $tempat_lahir</p>";
+                echo "<p><strong>Tanggal lahir:</strong> $tanggal_lahir</p>";
+                echo "<p><strong>Hobi:</strong> $hobi</p>";
+                echo "<p><strong>Pasangan:</strong> $pasangan</p>";
+                echo "<p><strong>Pekerjaan:</strong> $pekerjaan</p>";
+                echo "<p><strong>Nama orang tua:</strong> $nama_orang_tua</p>";
+                echo "<p><strong>Nama kakak:</strong> $nama_kakak</p>";
+                echo "<p><strong>Nama adik:</strong> $nama_adik</p>";
+            ?>
         </section>
         <section id="contact">
             <h2>Kontak Kami</h2>
@@ -61,10 +81,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Revandi Sastra [25]</p>
+        <p>&copy; 2025 Revandi Sastra [2522500080]</p>
     </footer>
     <button id="scrollToTopBtn" title="Kembali ke Atas">↑</button>
     <script src="script.js"></script>
-
 </body>
-    </html>
+</html>

@@ -3,6 +3,27 @@ document.getElementById("menuToggle").addEventListener("click", function () {
     
     });
     
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
  alert("Halo, Selamat Datang!");
  let nama = prompt("Siapa nama kamu?");
 alert("Halo, " + nama + "*");
@@ -20,8 +41,6 @@ document.querySelector("form").addEventListener("submit", function (e) {
     alert("Terima kasih, " + nama + "! Pesan Anda telah dikirim.");
     }
     });
-
-
 
     document.getElementById("menuToggle").addEventListener("click", function () {
         document.querySelector("nav").classList.toggle("active");
