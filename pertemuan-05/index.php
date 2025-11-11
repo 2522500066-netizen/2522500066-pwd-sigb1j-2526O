@@ -81,7 +81,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Revandi Sastra [2522500080]</p>
+        <p>&copy; 2025 Revandi Sastra [2522500066]</p>
     </footer>
     <button id="scrollToTopBtn" title="Kembali ke Atas">↑</button>
     <script src="script.js"></script>
