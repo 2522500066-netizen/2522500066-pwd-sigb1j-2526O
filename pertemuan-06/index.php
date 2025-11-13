@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">&#9776;</butto n>
         <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle Sidebar">☰</button>
         <h1>Ini Header</h1>
         <nav id="navMenu">
