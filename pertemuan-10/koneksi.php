@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$pass = "";
+$pass = "1234567";
 $db = "db_pwd2025"; 
 
 
